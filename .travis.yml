@@ -7,4 +7,4 @@ before_install:
   - docker build -t mgudipati/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run mgudipati/docker-react npm run start -- --coverage
+  - docker run mgudipati/docker-react npm run test -- --coverage
